@@ -1,4 +1,4 @@
-# A2TE: Enhancing Detail Awareness for Text-Based Person Search via Attribute Assistance and Token Exploitation
+# VGTR: Vision-Guided Text Representation Learning for Text-based Person Re-Identification
 
 ## 1. Progect Overview
 Text-based person retrieval aims to match pedestrian images with natural language descriptions and has attracted increasing attention in intelligent surveillance. Existing methods enhance textual representations through external knowledge, data augmentation, or generative reconstruction. However, these approaches mainly rely on text-only refinement and fail to fully exploit the rich visual semantics inherent in images, thereby limiting discriminative capability under semantically sparse descriptions. To address this issue, we propose a vision-guided text representation learning framework, termed VGTR, which enhances textual features by explicitly leveraging visual information. Specifically, we introduce a Semantic Slot Memory (SSM) module to capture diverse and stable visual semantic patterns, and a Visual Token Projection (VTP) module to align visual features with the textual embedding space. These components are seamlessly integrated into a unified training framework with carefully designed optimization objectives.Extensive experiments on CUHK-PEDES, ICFG-PEDES, and RSTPReid demonstrate that VGTR  outperforms state-of-the-art methods, achieving superior Rank-1 accuracy and mAP.
@@ -70,13 +70,13 @@ python train.py \
 ```
 
 ## 6. Text-to-Image Person Retrieval Results
-#### CUHK-PEDES dataset -- [Model for CUHK-PEDES](https://drive.google.com/drive/folders/189OvVPHTEeMLbNFJFvTtFWjjBtkTxetS?usp=sharing)
+#### CUHK-PEDES dataset
 ![示例图片](image/CUHK-PEDES.png)
 
-#### ICFG-PEDES dataset -- [Model for ICFG-PEDES](https://drive.google.com/drive/folders/1XWVZjdou8gONb5Eg9cqU5DwZhZo_kbLW?usp=sharing)
+#### ICFG-PEDES dataset
 ![示例图片](image/ICFG-PEDES.png)
 
-#### RSTPReid dataset -- [Model for RSTPReid](https://drive.google.com/drive/folders/1-PLgCTqyK6tzZXPbLFiM1J6vJhNIv3g4?usp=sharing)
+#### RSTPReid dataset
 ![示例图片](image/RSTPReid.png)
 
 
