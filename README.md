@@ -2,7 +2,7 @@
 
 ## 1. Progect Overview
 Text-based person retrieval aims to match pedestrian images with natural language descriptions and has attracted increasing attention in intelligent surveillance. Existing methods enhance textual representations through external knowledge, data augmentation, or generative reconstruction. However, these approaches mainly rely on text-only refinement and fail to fully exploit the rich visual semantics inherent in images, thereby limiting discriminative capability under semantically sparse descriptions. To address this issue, we propose a vision-guided text representation learning framework, termed VGTR, which enhances textual features by explicitly leveraging visual information. Specifically, we introduce a Semantic Slot Memory (SSM) module to capture diverse and stable visual semantic patterns, and a Visual Token Projection (VTP) module to align visual features with the textual embedding space. These components are seamlessly integrated into a unified training framework with carefully designed optimization objectives.Extensive experiments on CUHK-PEDES, ICFG-PEDES, and RSTPReid demonstrate that VGTR  outperforms state-of-the-art methods, achieving superior Rank-1 accuracy and mAP.
-![示例图片](image/framework.jpg)
+![示例图片](image/framework.png)
 
 ## 3. Key algorithm
   **Semantic Slot Memory (SSM) module:** The SSM organizes visual features into multiple semantic slots, where token-level information is softly aggregated and dynamically updated via a momentum mechanism, enabling structured and stable visual knowledge to guide text representation learning.
