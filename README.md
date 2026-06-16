@@ -1,7 +1,7 @@
 # VGTR: Vision-Guided Text Representation Learning for Text-based Person Re-Identification
 
 ## 1. Progect Overview
-Text-based person retrieval aims to match pedestrian images with natural language descriptions and has attracted increasing attention in intelligent surveillance. Existing methods enhance textual representations through external knowledge, data augmentation, or generative reconstruction. However, these approaches mainly rely on text-only refinement and fail to fully exploit the rich visual semantics inherent in images, thereby limiting discriminative capability under semantically sparse descriptions. To address this issue, we propose a vision-guided text representation learning framework, termed VGTR, which enhances textual features by explicitly leveraging visual information. Specifically, we introduce a Semantic Slot Memory (SSM) module to capture diverse and stable visual semantic patterns, and a Visual Token Projection (VTP) module to align visual features with the textual embedding space. These components are seamlessly integrated into a unified training framework with carefully designed optimization objectives.Extensive experiments on CUHK-PEDES, ICFG-PEDES, and RSTPReid demonstrate that VGTR  outperforms state-of-the-art methods, achieving superior Rank-1 accuracy and mAP.
+Text-based person retrieval (TBPR) aims to retrieve pedestrian images using natural language descriptions. Many previous studies have tend to focused on text enhancement and cross-modal alignment to improve retrieval performance. However, these strategies merely focus on improving text descriptions or optimizing cross-modal matching, while rich identity-related semantics embedded in pedestrian images have not been fully utilized in text representation learning. Intuitively, semantic information missing in text descriptions cannot be effectively supplemented through the visual modality, making it difficult to learn discriminative text representations, especially in cases where descriptions are short, vague, and semantically sparse. To address this issue, we propose a vision-guided text representation learning framework termed VGTR, which alleviates semantic sparsity by dynamically enriching textual representations with structured visual semantics. Specifically, we introduce a Semantic Slot Memory (SSM) module to progressively accumulate stable identity-aware visual semantic prototypes from pedestrian images. In addition, a Visual-Text Projection (VTP) module is designed to project visual features into a text-compatible semantic space, facilitating effective cross-modal semantic interaction. Through dynamic semantic retrieval and refinement, textual features can acquire complementary visual semantics, resulting in more informative and discriminative representations.
 ![示例图片](image/framework.png)
 
 ## 3. Key algorithm
@@ -87,7 +87,7 @@ The code is based on [IRRA](https://github.com/anosorae/IRRA) licensed under Apa
 #### If you use this project's code,please cite our paper:
 ```bibtex
 @article{He_2026_VGTR
-  title={VGTR: Vision-Guided Text Representation Learning for Text-based Person Retrieval},
+  title={VGTR: Vision-Guided Semantic Memory for Text-Based Person Retrieval},
   author={He, Junhao and Zhang, Chengfang and Feng, Ziliang},
   journal={xxx},
   year={2026}
