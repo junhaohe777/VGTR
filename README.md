@@ -87,7 +87,7 @@ The code is based on [IRRA](https://github.com/anosorae/IRRA) licensed under Apa
 #### If you use this project's code,please cite our paper:
 ```bibtex
 @article{He_2026_VGTR
-  title={A2TE: Enhancing Detail Awareness for Text-Based Person Search via Attribute Assistance and Token Exploitation},
+  title={VGTR: Vision-Guided Text Representation Learning for Text-based Person Retrieval},
   author={He, Junhao and Zhang, Chengfang and Feng, Ziliang},
   journal={xxx},
   year={2026}
